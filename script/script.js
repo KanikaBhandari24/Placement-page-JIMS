@@ -13,7 +13,7 @@ counters.forEach(counter => {
   const updateCount = () => {
     const target = +counter.getAttribute('data-target');
     const count = +counter.innerText;
-    const increment = isLPA ? Math.max(target / 120, 1) : target / 130;
+    const increment = isLPA ? Math.max(target / 100, 1) : target / 170;
 
     if (count < target) {
       counter.innerText = Math.ceil(count + increment);
