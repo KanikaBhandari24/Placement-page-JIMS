@@ -1,6 +1,8 @@
-/* General reset */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
+  font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +11,7 @@
 
 body {
     background: #fff;
-    font-family: "Inter", sans-serif;
+    
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -19,12 +21,6 @@ body {
     padding: 5px;
 }
 
-.inter-font {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
 
 /* Marquee Container */
 .marquee-container {
@@ -112,19 +108,19 @@ body {
 }
 
 .placement-heading {
-    font-size: 50px;
-    font-weight: 300;
+    font-size: 45px;
+    font-weight: 500;
   color: #1a1c78;
   text-align: center;
   margin-bottom: 10px; /* removes space below heading */
   margin-top: 40px;
 }
 .placement-stats{
-  background-color: #dbd8d8;
+  background-color: #e8e8e8;
+  margin-top: 15px;
 }
 .placement-p {
-    font-size: 20px;
-  color: #1a1c78;
+    font-size: 18px;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -141,14 +137,14 @@ body {
 .stat-box {
   text-align: center;
   margin-bottom: 50px;
-  
 }
 
 .stat-box h2 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 300;
-    color: #1a1c78;
     max-width: 200px;
+    color: black;
+    margin-top: 5px;
 }
 
 .stat-box .counter {
