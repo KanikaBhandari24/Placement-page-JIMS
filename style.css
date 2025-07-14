@@ -31,12 +31,12 @@ body {
     flex: 1;
     overflow: hidden;
     white-space: nowrap;
-    margin-top: 8px;
     position: relative;
   width: 100%;
   overflow: hidden;
   padding: 10px 25px; /* spacing for arrows */
   box-sizing: border-box;
+  /* background-color: #CCCCCC; */
 }
 
 .marquee-title h1 {
@@ -113,16 +113,17 @@ body {
 
 .placement-heading {
     font-size: 50px;
-  font-weight: bold;
+    font-weight: 300;
   color: #1a1c78;
   text-align: center;
   margin-bottom: 10px; /* removes space below heading */
   margin-top: 40px;
 }
-
+.placement-stats{
+  background-color: #dbd8d8;
+}
 .placement-p {
     font-size: 20px;
-  font-weight: bold;
   color: #1a1c78;
   text-align: center;
   margin-bottom: 30px;
@@ -134,15 +135,18 @@ body {
   justify-content: center;
   gap: 15rem;
   padding: 0 10px;
+  
 }
 
 .stat-box {
   text-align: center;
   margin-bottom: 50px;
+  
 }
 
 .stat-box h2 {
     font-size: 1.8rem;
+    font-weight: 300;
     color: #1a1c78;
     max-width: 200px;
 }
@@ -163,6 +167,7 @@ body {
 /* Recruiters Section */
 .recruiters-container{
   margin-top: 20px;
+  /* background-color: #CCCCCC; */
 }
 
 .recruiters-container .marquee-container {
@@ -286,3 +291,4 @@ body {
   transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 }
+

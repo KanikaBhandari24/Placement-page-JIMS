@@ -1,0 +1,94 @@
+
+.carousel-container {
+    position: relative;
+    width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 10px;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.next {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* Hover effect on buttons */
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.single-testimonial-style3 {
+    position: relative;
+    display: block;
+}
+
+.testimonial-style3_text-box_inner {
+    position: relative;
+    display: block;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 6px;
+    box-shadow: 0px -5px 25px 0px rgb(0 0 0 / 5%);
+    height: 100%;
+}
+.single-testimonial-style3 .top {
+    position: relative;
+    display: flex
+;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.single-testimonial-style3 .quote-icon {
+    position: absolute;
+    display: block;
+    color: #e6ede9;
+    font-size: 60px;
+    top: 15px;
+    left: 0;
+    z-index: 0;
+}
+
+.testimonial_mg {
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+    width: 120px;
+    border-radius:100%;
+}
