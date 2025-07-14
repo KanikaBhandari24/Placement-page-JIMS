@@ -1,0 +1,288 @@
+/* General reset */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo-card img {
+    padding: 5px;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Marquee Container */
+.marquee-container {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 8px;
+    position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 25px; /* spacing for arrows */
+  box-sizing: border-box;
+}
+
+.marquee-title h1 {
+    font-size: 1.8rem;
+    color: #D1143E;
+    white-space: nowrap;
+}
+
+.recruiters-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 5px;
+    /* border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000; */
+    min-height: 90px;
+    z-index: 1;
+    position: relative;
+}
+
+.marquee {
+    display: inline-flex;
+    animation: scroll 60s linear infinite;
+}
+
+.recruiters {
+    display: inline-flex;
+    animation: scroll 40s linear infinite;
+}
+
+.marquee-title {
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+
+.marquee div {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.recruiters div {
+    margin: 0 15px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.marquee-container:hover .marquee {
+    animation-play-state: paused;
+}
+
+/* Student Cards */
+.student-card {
+    margin: 0 15px;
+    display: inline-block;
+    text-align: center;
+    min-width: 200px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.student-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.placement-heading {
+    font-size: 50px;
+  font-weight: bold;
+  color: #1a1c78;
+  text-align: center;
+  margin-bottom: 10px; /* removes space below heading */
+  margin-top: 40px;
+}
+
+.placement-p {
+    font-size: 20px;
+  font-weight: bold;
+  color: #1a1c78;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.stats-section {
+  margin-top: 0; /* removes space above the section */
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+  padding: 0 10px;
+}
+
+.stat-box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.stat-box h2 {
+    font-size: 1.8rem;
+    color: #1a1c78;
+    max-width: 200px;
+}
+
+.stat-box .counter {
+    font-size: 3rem;
+    color: #D1143E;
+    margin-top: 10px;
+}
+
+.counter-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #D1143E;
+    margin-top: 10px;
+}
+
+/* Recruiters Section */
+.recruiters-container{
+  margin-top: 20px;
+}
+
+.recruiters-container .marquee-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+
+    white-space: nowrap;
+}
+
+.marquee-title {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.marquee-title h1 {
+    font-size: 1.8rem;
+    color: #D1143E;
+}
+
+/* Marquee */
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+.logo-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Logo Card Styling */
+.logo-card {
+    min-width: 200px;
+    height: 120px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+
+/* Animation Keyframes */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.slider-wrapper {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.slider {
+  display: flex;
+  gap: 10px;
+}
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #1a1c78;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.industry-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.industry-header h1 {
+  font-size: 2rem;
+  color: #1a1c78;
+}
+
+.industry-header h1 span {
+  color: #D1143E;
+}
+
+.industry-header a {
+  background-color: #D1143E;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.industry-header a:hover {
+  background-color: #1a1c78;
+  color: white;
+  transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}

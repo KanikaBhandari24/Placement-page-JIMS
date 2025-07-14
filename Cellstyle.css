@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+ font-family:'DM Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  padding: 100px;
+}
+
+.main-content {
+  flex: 2;
+  padding-right: 100px;
+}
+
+.main-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #1a1c78;
+}
+
+.write-up,
+.empty-box {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.sidebar {
+  flex: 1;
+  margin-top: 50px;
+  max-width: 20%;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+  background-color: #2E3192; /* Dark blue */
+  color: white;
+  margin-bottom: 1px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #1a1c78; /* Slightly darker blue */
+  transition: background-color 0.3s ease;
+}
+
+
+.sidebar li.active {
+  background-color: #D1143E; /* Red for selected */
+}
+
+/* PLACEMENT  */
+.placement-members {
+  margin-top: 0;
+  text-align: center;
+  padding: 100px;
+  
+}
+
+.placement-members h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #2E3192;
+  margin-bottom: 50px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.member-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 160px;
+  height: 90px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border-bottom: 4px solid #D1143E;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.name {
+  font-weight: 700;
+  color: #2E3192;
+  margin: 0;
+  font-size: 30px;
+}
+
+.post {
+  font-weight: 600;
+  color: #2E3192;
+  margin: 5px 0 0;
+  font-size: 20px;
+}
+
+.department {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Student team */
+
+.placement-student-team {
+  text-align: center;
+  padding: 100px;
+}
+
+.placement-student-team h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #2E3192;
+  margin-bottom: 50px;
+}
+
+.department-group {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.member-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 40px;
+  border-radius: 8px;
+}
+
+.member-card {
+  padding: 15px;
+  border-radius: 8px;
+  width: 120px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-bottom: 4px solid #D1143E;
+}
+
+.name {
+  font-weight: 700;
+  color: #2E3192;
+  margin: 0;
+  font-size: 20px;
+}
+
+.post {
+  font-weight: 600;
+  color: #2E3192;
+  margin: 5px 0 0;
+  font-size: 15px;
+}
+
+.department-label {
+  font-weight: 700;
+  font-size: 30px;
+  color: #D1143E;
+  margin-top: 10px;
+}
