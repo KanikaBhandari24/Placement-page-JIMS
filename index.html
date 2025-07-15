@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Placement Landing Page</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style2.css" />
+    <!-- <link rel="stylesheet" href="style2.css" /> -->
     <link rel="stylesheet" href="carousel.css">
   </head>
   <body>
@@ -310,10 +310,6 @@ src="/images/student/s2.jpg"              alt="Student"
             </div>
           </div>
         </div>
-
-        
-
-    
       </div>
 
     <!-- Notices Section -->
@@ -532,6 +528,30 @@ src="/images/student/s2.jpg"              alt="Student"
       </div>
     </section>
 
+    <!-- Placement record -->
+     <section id="placement-records" class="content-section">
+      <div class="container">
+        <div class="main-content">
+
+          <div class="governing_member">
+            <div class="card">
+              <h4>BCA</h4>
+              <a href="pdf/BCA.pdf" target="_blank"><img class="pdf-icon" src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="PDF" /></a>
+            </div>
+            <div class="card">
+              <h4>BBA</h4>
+              <a href="pdf/BBA.pdf" target="_blank"><img class="pdf-icon" src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="PDF" /></a>
+            </div>
+            <div class="card">
+              <h4>BA(JMC)</h4>
+              <a href="pdf/BA(JMC).pdf" target="_blank"><img class="pdf-icon" src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="PDF" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+
     <!-- Recuruiters section -->
      <section id="our-recruiters" class="content-section">   
     <div class="container">
@@ -555,50 +575,34 @@ src="/images/student/s2.jpg"              alt="Student"
   </section>
 
   <!-- Industry -->
-   <section class="content-section" id="connect">
-      <div class="container">
-        <div class="main-content">
-          <div class="industry-header">
-            <!-- <h1>Industry<span> Connect</span></h1> -->
-              <a href="https://www.jimsd.org/gallery.php" target="_blank">More info</a>
-          </div>
-          <div class="internship-grid">
-            <div class="logo-card-Industry">
-              <img src="https://1000logos.net/wp-content/uploads/2018/02/Haier-Logo-2004.png" alt="Lemon Tree">
-              <!-- <a href="https://www.jimsd.org/gallery-details48db.php?id=58" target="_blank">More info</a> -->
-            </div>
-            <div class="logo-card-Industry">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJp-psq2CgULG181fXpiuCR7LkzcRFfuKqsQ&s"
-                alt="Infosys">
-              <!-- <a href="https://www.jimsd.org/industry-visit-to-vikas-publishing-house--.php" target="_blank">More info</a> -->
-            </div>
-            <div class="logo-card-Industry">
-              <img src="https://i.ytimg.com/vi/proyNUOqAts/maxresdefault.jpg" alt="AON">
-              <!-- <a href="https://www.jimsd.org/gallery-details011a.php?id=60" target="_blank">More info</a> -->
-            </div>
-            <div class="logo-card-Industry">
-              <img src="https://media.lendingkart.com/wp-content/uploads/2021/01/NSIC.jpg" alt="ANI">
-              <!-- <a href="https://www.jimsd.org/exposure-visit-to-national-small-industries-corporation-(nsic).php" target="_blank">More info</a> -->
-            </div>
-            <div class="logo-card-Industry">
-              <img src="https://logos-world.net/wp-content/uploads/2023/03/Parle-Logo.png" alt="ANI">
-              
-              <!-- <a href="https://www.jimsd.org/exposure-visit-to-national-small-industries-corporation-(nsic).php" target="_blank">More info</a> -->
-            </div>
-            <div class="logo-card-Industry">
-              <img src="https://www.iiitd.ac.in/sites/default/files/images/graphicidentity/logo.jpg" alt="ANI">
-              
-              <!-- <a href="https://www.jimsd.org/exposure-visit-to-national-small-industries-corporation-(nsic).php" target="_blank">More info</a> -->
-            </div>
-            <div class="logo-card-Industry">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1gwV8-z1DPG5uQ3Mm2BH0mlE5dO95Fw99MQ&s" alt="ANI">
-              
-              <!-- <a href="https://www.jimsd.org/exposure-visit-to-national-small-industries-corporation-(nsic).php" target="_blank">More info</a> -->
-            </div>
-            <!-- Repeat for all logos -->
-          </div>
+   
+    <section class="content-section container" id="connect">
 
-        </div>
+      <div class="event-grid main-content">
+        <!-- <?php
+        $jsonFile = "admin/events/db/coCurricularEvents.json";
+        $eventData = json_decode(file_get_contents($jsonFile), true);
+
+        foreach ($eventData as $event):
+          if ($event["status"] !== "show")
+            continue;
+
+          $id = htmlspecialchars($event["id"]);
+          $link = htmlspecialchars($event["link"]);
+          $date = htmlspecialchars($event["date"]);
+          $caption = isset($event["caption"]) ? htmlspecialchars($event["caption"]) : htmlspecialchars($event["title"]);
+          $image = !empty($event["img"]) ? htmlspecialchars($event["img"][0]) : "default.jpg";
+          ?>
+          <div class="event-card">
+            <div class="card-content">
+              <span class="event-date"><?= $date ?></span>
+              <a href="<?= $link ?>" target="_blank">
+                <img src="<?= $image ?>55" alt="<?= $caption ?>">
+                <span class="event-caption"><?= $caption ?></span>
+              </a>
+            </div>
+          </div>
+        <?php endforeach; ?> -->
       </div>
     </section>
 

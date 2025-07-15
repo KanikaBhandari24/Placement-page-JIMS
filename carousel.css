@@ -45,7 +45,7 @@
 
 .carousel-item {
   min-width: 100%;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,3 +170,68 @@ button:hover {
     font-size: 0.95rem;
   }
 }
+
+@media (max-width: 768px) {
+  .corporate-speak {
+    margin-top: 60px;
+    padding: 0 10px;
+  }
+
+  .corporate-speak h1 {
+    font-size: 1.6rem;
+    margin: 30px 0 20px;
+  }
+
+  .carousel-container {
+    width: 90%;
+    max-width: 360px;
+    height: auto;
+    padding: 20px 15px;
+    border-radius: 8px;
+  }
+
+  .carousel-item {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .testimonial-style3__text-box__inner {
+    padding: 15px;
+  }
+
+  .testimonial_mg {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 12px;
+  }
+
+  .name h3 {
+    font-size: 1rem;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .name p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .inner-text p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  button {
+    transform: translateY(0);
+  }
+
+  .prev {
+    left: 20%;
+  }
+
+  .next {
+    right: 20%;
+  }
+}
+

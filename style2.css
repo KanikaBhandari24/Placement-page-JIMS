@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-  
-}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -661,3 +659,62 @@ th {
   }
 }
 
+.pdf-button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 15px;
+      font-size: 18px;
+      color: white;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .pdf-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* For content section */
+
+.governing_member {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 70px;
+}
+
+.governing_member .card {
+  border: #000 solid 0.5px;
+  padding: 20px 20px;
+  text-align: center;
+  width: 250px;
+  border-radius: 4px;
+  box-shadow: 0 0 13px 0 rgb(0 0 0 / 15%);
+  transition: transform 0.3s ease;
+  border-bottom: 3px solid #c9002b; /* deep red */
+}
+
+.governing_member .card h4 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #2d2d80; /* dark blue like in your 2nd image */
+  margin-bottom: 10px;
+}
+
+/* .governing_member .card a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease;
+} */
+
+.governing_member .card :hover {
+  transform: scale(1);
+    box-shadow: 0 0 15px 0 rgb(0 0 0 / 25%);
+}
