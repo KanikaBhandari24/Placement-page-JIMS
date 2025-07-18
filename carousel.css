@@ -38,7 +38,7 @@ html, body {
 .carousel-container {
     background-color: #e8e7e7;
   position: relative;
-  width: 900px;
+  width: 800px;
   height: 400px;
   margin: 0 auto;
   padding: 30px;
@@ -56,11 +56,17 @@ html, body {
 }
 
 .carousel-item {
+  overflow-y: hidden;
   min-width: 100%;
-  padding: 30px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+::-webkit-scrollbar
+{
+  width: 0px ;
 }
 
 /* Testimonial Inner Box */
@@ -79,10 +85,14 @@ html, body {
 
 /* Testimonial Layout */
 .single-testimonial-style3 .top {
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+  text-align: center;
+}
+.single-testimonial-style3 .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Image Styling */
@@ -99,6 +109,7 @@ html, body {
   height: 100%;
   object-fit: cover;
   border-radius: 100%;
+  
 }
 
 /* Name & Title */
@@ -134,14 +145,17 @@ html, body {
 }
 
 /* Buttons */
-button {
+/* Buttons: Universal fix */
+button.prev,
+button.next {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  bottom: unset !important;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  padding: 12px;
+  padding: 10px;
   font-size: 14px;
   cursor: pointer;
   border-radius: 50%;
@@ -154,18 +168,21 @@ button:hover {
 }
 
 .prev {
-  left: 15px;
+  left: 10px !important;
+  right: unset !important;
 }
 
 .next {
-  right: 15px;
+  right: 10px !important;
+  left: unset !important;
 }
+
 
 /* Responsive */
 /* Tablets (portrait and landscape) */
 @media (max-width: 1024px) {
   .carousel-container {
-    width: 90%;
+    width: 100%;
     height: auto;
     padding: 25px 20px;
   }
@@ -220,6 +237,10 @@ button:hover {
   .carousel-item {
     flex-direction: column;
     padding: 15px;
+  }
+
+  .carousel{
+    /* width: 20%; */
   }
 
   .testimonial-style3__text-box__inner {

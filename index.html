@@ -10,7 +10,6 @@
   </head>
   <body>
     <!-- Student Marquee -->
-     
     <div class="marquee-container">
       <button class="arrow left">&#10094;</button>
       <div class="slider-wrapper">
@@ -241,20 +240,23 @@ src="/images/student/s2.jpg"              alt="Student"
 
     <!-- Placement Stats -->
    <div class="placement-stats">
-  <h1 class="placement-heading">OUR PLACEMENTS</h1>
+  <div class="title-wrapper">
+    <div class="section-title">PLACEMENTS</div>
+    <div class="underline"></div>
+  </div>
   <p class="placement-p">Last 5 Years</p>
 
   <section class="stats-section">
     <div class="stat-box">
-      <p class="counter lpa" data-target="110000">0</p>
+      <p class="counter lpa" data-target="1100000">0</p>
       <h2>Highest Placement <span class="unit"></span></h2>
     </div>
     <div class="stat-box">
-      <p class="counter lpa" data-target="55500">0</p>
+      <p class="counter lpa" data-target="555000">0</p>
       <h2>Average Placement <span class="unit"></span></h2>
     </div>
     <div class="stat-box">
-      <div style="display: flex; align-items: center; justify-content: center;">
+      <div style="display: flex; align-items: center; justify-content: center; margin: 0 80px;">
         <p class="counter" data-target="100">0</p>
         <p style="font-size: 3rem; color: #D1143E;">%</p>
       </div>
@@ -574,35 +576,61 @@ src="/images/student/s2.jpg"              alt="Student"
     </div>
   </section>
 
+  <!-- CORPORATE SPEAK -->
+  <section class="content-section" id="corporate-speak">
+    <div class="container">
+      <div class="main-content">
+        <!-- <h1>Corporate Speak</h1> -->
+        <!-- <div class="write-up"></div> -->
+        <div class="corporate-speak" style="width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 20px 0;">
+          <iframe src="carousel.html" width="620" height="500" style="border: none;" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+    </section>
   <!-- Industry -->
    
-    <section class="content-section container" id="connect">
+       <section class="content-section container" id="connect">
 
       <div class="event-grid main-content">
-        <!-- <?php
-        $jsonFile = "admin/events/db/coCurricularEvents.json";
-        $eventData = json_decode(file_get_contents($jsonFile), true);
+         <!-- <?php
+  $jsonFile = "data.json";
+  $eventData = json_decode(file_get_contents($jsonFile), true);
 
-        foreach ($eventData as $event):
-          if ($event["status"] !== "show")
-            continue;
+  $count = 0;
+  foreach ($eventData as $event):
+    if ($event["status"] !== "show") continue;
 
-          $id = htmlspecialchars($event["id"]);
-          $link = htmlspecialchars($event["link"]);
-          $date = htmlspecialchars($event["date"]);
-          $caption = isset($event["caption"]) ? htmlspecialchars($event["caption"]) : htmlspecialchars($event["title"]);
-          $image = !empty($event["img"]) ? htmlspecialchars($event["img"][0]) : "default.jpg";
-          ?>
-          <div class="event-card">
-            <div class="card-content">
-              <span class="event-date"><?= $date ?></span>
-              <a href="<?= $link ?>" target="_blank">
-                <img src="<?= $image ?>55" alt="<?= $caption ?>">
-                <span class="event-caption"><?= $caption ?></span>
-              </a>
-            </div>
-          </div>
-        <?php endforeach; ?> -->
+    if ($count >= 6) break; // Show only first 6
+
+    $id = htmlspecialchars($event["id"]);
+    $link = htmlspecialchars($event["link"]);
+    $date = htmlspecialchars($event["date"]);
+    $caption = isset($event["caption"]) ? htmlspecialchars($event["caption"]) : htmlspecialchars($event["title"]);
+    $image = !empty($event["img"]) ? htmlspecialchars($event["img"][0]) : "default.jpg";
+    ?> 
+    <div class="event-card">
+      <div class="card-content">
+        <span class="event-date"><?= $date ?></span>
+        <a href="<?= $link ?>" target="_blank">
+          <img src="<?= $image ?>" alt="<?= $caption ?>">
+          <span class="event-caption"><?= $caption ?></span>
+        </a>
+      </div>
+    </div>
+    <?php
+    $count++;
+  endforeach;
+?> -->
+
+<!-- More Info Button -->
+<div class="more-info-btn" style="text-align: center; display:flex;  margin: 20px auto; margin-left: 15rem; padding: 10px; justify-content: center; align-items: center;  width: 100%;">
+  <a href="all-events.php" class="btn" style="padding: 10px 20px; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 5px;">
+    More Info
+  </a>
+</div>
+
       </div>
     </section>
 
@@ -629,15 +657,15 @@ src="/images/student/s2.jpg"              alt="Student"
           <!-- <li class="nav-item" data-target="notice">
             Notices
           </li> -->
+          <li class="nav-item" data-target="corporate-speak">
+            Corporate Speak
+</li>
         </ul>
       </nav>
   </div>
 
   <!-- corporate speak -->
-   <div class="corporate-speak" style="width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 20px 0;">
-    <h1 style="font-size: 2.5rem; font-weight: bold; color: #1a1c78; ">CORPORATE SPEAK</h1>
-      <iframe src="carousel.html" width="620" height="500" style="border: none;" frameborder="0"></iframe>
-    </div>
+   
 
   <!-- ALL SCRIPTS -->
     <script src="script/script.js"></script>

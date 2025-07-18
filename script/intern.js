@@ -9,15 +9,13 @@
       "images/logo.png",
       "images/mercer.png",
       "images/Natwestgroup.png",
-      "images/nn.png",
       "images/protiviti.png",
       "images/tcs2.png",
       "images/the_times_of_india.png",
-      "images/twitter_blue.png",
-      "images/twitter.png",
       "images/wipro_applying.png",
       "images/wipro.png",
-      "images/zee_cinema.png"
+      "images/zee_cinema.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPl7lqoIxirLa3qZayQsyNNU-FZj4ielxhKg&s"
     ];
 
     const container = document.getElementById("internship-logos");
